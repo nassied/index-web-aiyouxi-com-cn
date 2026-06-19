@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nassied.github.io/index-web-aiyouxi-com-cn/sitemap.xml
