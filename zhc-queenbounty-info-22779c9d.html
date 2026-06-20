@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赏金女王 · 简明产品指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f7f4ef;
+            font-family: 'Segoe UI', system-ui, -apple-system, 'Noto Sans SC', sans-serif;
+            color: #2d2a24;
+            line-height: 1.6;
+            padding: 2rem 1.25rem;
+        }
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 28px;
+            padding: 2.8rem 2.2rem;
+            box-shadow: 0 8px 28px rgba(0,0,0,0.04);
+        }
+
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 550;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+            color: #1f1c18;
+        }
+        .subhead {
+            font-size: 1rem;
+            color: #6b6259;
+            border-left: 4px solid #c5b8a8;
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .hero-text {
+            background: #f2ede6;
+            padding: 1.5rem 1.8rem;
+            border-radius: 20px;
+            margin-bottom: 2.2rem;
+        }
+        .hero-text p {
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .highlight-card {
+            flex: 1 1 200px;
+            background: #faf8f5;
+            padding: 1.2rem 1.2rem 1.5rem;
+            border-radius: 18px;
+            border: 1px solid #e6ded5;
+        }
+        .highlight-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            color: #3f3830;
+            letter-spacing: 0.02em;
+        }
+        .highlight-card p {
+            font-size: 0.95rem;
+            color: #4f4840;
+        }
+
+        .quote-block {
+            background: #eae4db;
+            border-left: 6px solid #b3a18f;
+            padding: 1.2rem 1.8rem;
+            margin-bottom: 2rem;
+            border-radius: 0 14px 14px 0;
+            font-style: normal;
+        }
+        .quote-block p {
+            font-size: 0.98rem;
+            color: #2f2a24;
+        }
+
+        .usage-section {
+            margin-bottom: 2.2rem;
+        }
+        .usage-section h2 {
+            font-size: 1.25rem;
+            font-weight: 520;
+            margin-bottom: 0.8rem;
+            color: #1f1c18;
+        }
+        .usage-list {
+            list-style: none;
+            padding: 0;
+        }
+        .usage-list li {
+            padding: 0.5rem 0 0.5rem 1.25rem;
+            position: relative;
+            font-size: 0.98rem;
+            border-bottom: 1px solid #ede7e0;
+        }
+        .usage-list li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #957f6b;
+        }
+
+        .notice-box {
+            background: #f5f1eb;
+            border: 1px dashed #bcae9b;
+            border-radius: 16px;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .notice-box strong {
+            color: #3f3830;
+        }
+
+        .faq-mini {
+            margin-bottom: 2rem;
+        }
+        .faq-mini h2 {
+            font-size: 1.15rem;
+            font-weight: 520;
+            margin-bottom: 0.75rem;
+            color: #1f1c18;
+        }
+        .faq-item {
+            margin-bottom: 0.6rem;
+        }
+        .faq-q {
+            font-weight: 550;
+            color: #3f3830;
+        }
+        .faq-a {
+            color: #4f4840;
+            padding-left: 1rem;
+            font-size: 0.94rem;
+        }
+
+        .link-sentence {
+            background: #f2ede6;
+            padding: 1rem 1.4rem;
+            border-radius: 14px;
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        .link-sentence a {
+            color: #5f4b37;
+            text-decoration: none;
+            font-weight: 550;
+            border-bottom: 2px solid #d4c3b2;
+            transition: border 0.2s, color 0.2s;
+        }
+        .link-sentence a:hover {
+            color: #1f1c18;
+            border-bottom-color: #7f664e;
+        }
+
+        .footer-note {
+            font-size: 0.85rem;
+            color: #7d7368;
+            border-top: 1px solid #ddd6cc;
+            padding-top: 1.5rem;
+            margin-top: 1.5rem;
+            text-align: left;
+        }
+
+        @media (max-width: 580px) {
+            .container {
+                padding: 1.8rem 1.2rem;
+            }
+            h1 {
+                font-size: 1.7rem;
+            }
+            .highlight-grid {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .hero-text {
+                padding: 1.2rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>赏金女王 · 产品说明</h1>
+    <div class="subhead">简明指南 · 场景亮点 · 访问提醒</div>
+
+    <div class="hero-text">
+        <p><strong>赏金女王</strong> 定位为一款面向轻度策略与休闲娱乐场景的互动产品。其核心设计围绕简洁的规则展开，用户可通过少量操作获得节奏适中的反馈体验。本页从功能亮点、使用场景与必要提示三个层面提供客观介绍，便于你快速评估是否匹配自己的兴趣。</p>
+        <p>整体界面采用低对比度配色，信息层级清晰，减少视觉干扰，适合碎片时间下的短周期交互。</p>
+    </div>
+
+    <!-- 亮点卡片 -->
+    <div class="highlight-grid">
+        <div class="highlight-card">
+            <h3>⚡ 低门槛启动</h3>
+            <p>无需复杂注册流程，打开即用。新手引导控制在三次点击以内，降低了理解成本。</p>
+        </div>
+        <div class="highlight-card">
+            <h3>📊 节奏可调</h3>
+            <p>内置速度调节机制，用户可根据自身偏好选择推进节奏，兼顾快速体验与细致观察。</p>
+        </div>
+        <div class="highlight-card">
+            <h3>🔒 隐私优先</h3>
+            <p>本地数据占主导，不强制收集个人身份信息。会话记录可随时清除，透明可控。</p>
+        </div>
+    </div>
+
+    <!-- 引用提示块 -->
+    <div class="quote-block">
+        <p>“任何工具或交互产品，使用前都应明确其边界。赏金女王不涉及金融属性、概率性抽奖或任何形式的现金兑换。所有数值仅用于娱乐反馈，请保持合理预期。”<br>—— 产品说明摘要</p>
+    </div>
+
+    <!-- 使用建议 -->
+    <div class="usage-section">
+        <h2>📌 使用建议</h2>
+        <ul class="usage-list">
+            <li><strong>熟悉规则：</strong>建议先浏览内置帮助页，明确计分方式与交互触发条件，避免误操作。</li>
+            <li><strong>时间管理：</strong>单次推荐时长不超过 20 分钟，产品内置计时提醒功能（需手动开启）。</li>
+            <li><strong>数据清理：</strong>若使用公共设备，离开前可通过设置面板一键清除本地缓存。</li>
+            <li><strong>反馈渠道：</strong>如遇显示异常或逻辑冲突，可通过页面底部的“反馈”按钮提交描述，通常 2 个工作日内会得到回复。</li>
+        </ul>
+    </div>
+
+    <!-- 可信但克制的访问说明 -->
+    <div class="notice-box">
+        <strong>访问说明：</strong> 产品托管于标准静态平台，未集成第三方追踪脚本。页面加载后不会主动请求位置、通讯录或敏感权限。所有交互均在客户端完成，网络仅用于初始资源加载。建议使用最新版浏览器访问以获得最佳兼容性。
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="faq-mini">
+        <h2>常见问题摘要</h2>
+        <div class="faq-item">
+            <div class="faq-q">Q：需要创建账户吗？</div>
+            <div class="faq-a">A：不需要。可直接以访客模式使用，所有进度保存在浏览器本地。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Q：是否支持移动端？</div>
+            <div class="faq-a">A：支持。页面布局自适应，触摸操作经过适配，在手机和平板上均可正常使用。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Q：产品是否会推送通知？</div>
+            <div class="faq-a">A：不会。在未获得明确授权的情况下，不会发送任何浏览器通知或弹窗。</div>
+        </div>
+    </div>
+
+    <!-- 自然嵌入链接的句子（严格文字） -->
+    <div class="link-sentence">
+        <p>如果你希望进一步了解产品的实际界面与交互细节，可以直接前往 <a href="https://zhc-queenbounty.com">赏金女王</a> 体验当前版本。页面加载后建议先停留片刻，让说明文字完整呈现。</p>
+    </div>
+
+    <div class="footer-note">
+        <span>本页仅为产品功能介绍，不构成任何形式的使用承诺。具体表现以实际页面为准。</span>
+    </div>
+
+</div>
+</body>
+</html>
