@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>澳门六合彩 · 信息参考</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f2f4f6;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 0 1.25rem 3rem;
+        }
+
+        .page {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* 首页横幅 */
+        .hero {
+            background: linear-gradient(145deg, #f9fafb 0%, #eef1f5 100%);
+            border: 1px solid rgba(0,0,0,0.04);
+            border-radius: 2rem;
+            box-shadow: 0 8px 20px -6px rgba(0, 0, 0, 0.05);
+            padding: 3rem 2.5rem 2.8rem;
+            margin: 2.4rem 0 2.8rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #1a202c;
+            margin-bottom: 0.6rem;
+        }
+
+        .hero .sub {
+            font-size: 1.05rem;
+            color: #475569;
+            border-top: 1px solid #d1d9e6;
+            display: inline-block;
+            padding-top: 0.75rem;
+            margin-top: 0.25rem;
+            max-width: 70%;
+        }
+
+        /* 背景说明条 */
+        .bg-note {
+            background: #e9ecf0;
+            border-left: 4px solid #64748b;
+            border-radius: 1.25rem;
+            padding: 1.6rem 2rem;
+            margin-bottom: 2.8rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            font-size: 0.98rem;
+            color: #2d3a4a;
+        }
+
+        .bg-note strong {
+            font-weight: 500;
+            color: #1e293b;
+        }
+
+        /* 三段式卡片网格 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.8rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 1.5rem;
+            padding: 1.8rem 1.8rem 2rem;
+            box-shadow: 0 4px 12px -8px rgba(0, 0, 0, 0.06);
+            transition: box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 18px -8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 0.9rem;
+            border-bottom: 1px solid #eef2f6;
+            padding-bottom: 0.55rem;
+            color: #1e293b;
+        }
+
+        .card p {
+            font-size: 0.96rem;
+            color: #334155;
+            margin-bottom: 0.75rem;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 页尾提示区 */
+        .footer-tip {
+            background: #ffffffea;
+            backdrop-filter: blur(4px);
+            border: 1px solid #dce3ec;
+            border-radius: 2rem;
+            padding: 2rem 2.2rem;
+            margin: 2rem 0 1rem;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.02);
+            text-align: center;
+        }
+
+        .footer-tip p {
+            font-size: 1rem;
+            color: #2c3e50;
+            margin-bottom: 0.65rem;
+        }
+
+        .footer-tip a {
+            color: #1f3a5f;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid #9aaec6;
+            padding-bottom: 1px;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .footer-tip a:hover {
+            border-bottom: 1px solid #1e293b;
+            color: #0f172a;
+        }
+
+        .footer-tip .small-note {
+            font-size: 0.85rem;
+            color: #5e6f88;
+            margin-top: 0.7rem;
+            letter-spacing: 0.2px;
+        }
+
+        /* 响应式 */
+        @media (max-width: 700px) {
+            .hero {
+                padding: 2rem 1.5rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero .sub {
+                max-width: 100%;
+                font-size: 0.95rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+            .bg-note {
+                padding: 1.2rem 1.4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 0 0.8rem 2rem;
+            }
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            .card-grid {
+                gap: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- 首页横幅 -->
+    <div class="hero">
+        <h1>澳门六合彩 · 日常参考</h1>
+        <div class="sub">查询 · 对照 · 延伸阅读</div>
+    </div>
+
+    <!-- 背景说明 -->
+    <div class="bg-note">
+        <strong>关于这个页面</strong> —— 很多人习惯在空闲时翻阅六合相关的记录与规律，这里提供一种更安静的浏览方式：不喧哗，不催促，只是把信息整理成卡片，方便随手查看。<br> 
+        你可以把它当作一个安静的查询起点，或者一个对照延伸的便签本。
+    </div>
+
+    <!-- 三段自然介绍 (杂志卡片式) -->
+    <div class="card-grid">
+        <div class="card">
+            <h3>日常查询习惯</h3>
+            <p>不少朋友会在周一、周四晚间打开浏览器，简单核对一下最近几期的号码与走势。「澳门六合彩」在本地及周边地区有着长久的历史，很多人已经把它当作一种周末前后的闲余环节。</p>
+            <p>比起复杂的分析，更多人需要的只是一个干净、直接的对照版块，用来记录自己关注的那几组数字。</p>
+        </div>
+        <div class="card">
+            <h3>对照与笔记</h3>
+            <p>无论是手写记录还是电子表格，每次开奖后简单的对照往往能带来一些自己的判断。有人喜欢横向对比区间，有人偏爱统计冷热——这些方法没有高下，只看是否顺手。</p>
+            <p>如果你也在寻找一个可以随时打开、不会堆积广告的参考页，这里或许适合放进收藏夹。</p>
+        </div>
+        <div class="card">
+            <h3>延伸阅读视角</h3>
+            <p>除了直接的数据，一些背景知识也能丰富理解：比如每期玩法的小变化、历史返奖比例的趋势、以及不同地区的习惯差异。延伸阅读不必很学术，一段摘要或一则短评就有价值。</p>
+            <p>当然，所有的延伸都以真实可查为前提。我们不编造理论，只呈现已经存在的信息脉络。</p>
+        </div>
+    </div>
+
+    <!-- 页尾访问提示（自然嵌入链接） -->
+    <div class="footer-tip">
+        <p>如果你想浏览更完整的即时资讯，可以随时查阅 <a href="https://main--macaujc.com">澳门六合彩</a> 的相关内容。</p>
+        <p class="small-note">每次打开都是同样的地址，不需要反复搜索。</p>
+    </div>
+
+</div>
+</body>
+</html>
